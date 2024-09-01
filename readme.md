@@ -1,1 +1,1 @@
-This repo is dedicated to learn about FastAPI
+This repo is dedicated to learn about FastAPII

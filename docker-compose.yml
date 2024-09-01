@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mongo
+    environment:
+      - MONGO_URI=mongodb+srv://ameay35:2s6jpXRWP1WBGOOF@cluster0.bgykyvk.mongodb.net/kimo_db
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
